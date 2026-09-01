@@ -1,0 +1,58 @@
+src/main/resources/admin/app.js
+  s_7ceafd9d18ff51::t_8d816e4eddc67b 8-47,118
+src/main/java/dev/aigod/ScheduledEvent.java
+  s_7ceafd9d18ff51::t_8c295857f90272 1-17
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_8c295857f90272 38
+  s_7ceafd9d18ff51::t_34aa02b7a7e90b 306
+  s_7ceafd9d18ff51::t_4fe82d6398b27a 462-463
+  s_7ceafd9d18ff51::t_17bd96b103e727 349,351-354,525-531,538,543
+  s_7ceafd9d18ff51::t_caaeace2eef7e9 346,350,358
+  s_7ceafd9d18ff51::t_45577adb20c743 50-51,58-59,307-308,316,344-345,348,355-356,359,365-368,422-427
+  s_7ceafd9d18ff51::t_918455a2e6aa71 3,18-19,24-25,28,41-43,46-47,108,128-138,213-215,264-269,271,273,275,279-305,309-314,317-325,327-330,343,347,357,360-364,369-421,428-433,453-455,587
+  s_7ceafd9d18ff51::t_751d8040745fe7 272,326,331-342,586
+  s_7ceafd9d18ff51::t_0d500f6c81ddb1 315
+README.md
+  s_7ceafd9d18ff51::t_17bd96b103e727 54-55
+  s_7ceafd9d18ff51::t_c6200dd8930ccc 41,48-53,56,113-121,269-270
+deploy/minecraft.service
+  s_7ceafd9d18ff51::t_d405d2f3897aa7 1-19
+src/main/java/dev/aigod/ScheduleStore.java
+  s_7ceafd9d18ff51::t_8c295857f90272 1-47
+src/main/java/dev/aigod/OpenAiGodClient.java
+  s_7ceafd9d18ff51::t_918455a2e6aa71 43-45,164-204,303-305
+src/main/resources/admin/styles.css
+  s_7ceafd9d18ff51::t_8d816e4eddc67b 54-74,97
+.github/workflows/deploy.yml
+  s_7ceafd9d18ff51::t_d405d2f3897aa7 33-34,49-52,59
+deploy/minecraft-deploy
+  s_7ceafd9d18ff51::t_d405d2f3897aa7 1-34
+src/main/java/dev/aigod/AiGodMod.java
+  s_7ceafd9d18ff51::t_918455a2e6aa71 58-59
+  s_7ceafd9d18ff51::t_45577adb20c743 48-49,51
+src/main/java/dev/aigod/AdminServer.java
+  s_7ceafd9d18ff51::t_8d816e4eddc67b 95,119,180-188
+  s_7ceafd9d18ff51::t_918455a2e6aa71 27,41,48,54
+website/index.html
+  s_7ceafd9d18ff51::t_c6200dd8930ccc 10
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_918455a2e6aa71 152-154
+src/main/resources/admin/index.html
+  s_7ceafd9d18ff51::t_8d816e4eddc67b 6,23-34
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "22bbf90fe55d4f713d2c892529e4ef84735b1692",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
