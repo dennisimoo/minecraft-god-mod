@@ -1,0 +1,73 @@
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_e77699953b3caf 206-209,216-218
+  s_7ceafd9d18ff51::t_853538c3a1b556 27-28,104,132,152,156,164-166,219
+src/test/java/dev/aigod/DailyStoreTest.java
+  s_7ceafd9d18ff51::t_863792750cf43f 1-30
+src/main/java/dev/aigod/AiGodMod.java
+  s_7ceafd9d18ff51::t_e962599af0ba19 9,20,28-31,48-49,51-63,68-69
+README.md
+  s_7ceafd9d18ff51::t_e962599af0ba19 6,12,31-34,41,46-56,59-60,68-71,82-83,119-127,136-140,192-193,238,268-286
+  s_7ceafd9d18ff51::t_b2cf475fda97d9 99-102,118
+  s_ba5fa89652f544::t_f387f8b4994e74 287
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_e962599af0ba19 3,6-7,10-11,16,18-19,24-25,28,38,41-44,46-47,50-51,54,58-60,80-81,94-95,114-131,135-145,164-166,173,175,189-190,193-197,210,218-223,241-390,393-465,468-470,506-507,522-523,530,532-538,545,551,580,592-595
+src/main/java/dev/aigod/DailyStore.java
+  s_7ceafd9d18ff51::t_863792750cf43f 5-6,8,48-63
+src/main/java/dev/aigod/OpenAiGodClient.java
+  s_7ceafd9d18ff51::t_e962599af0ba19 24,28-37,42-46,67-68,87,115-147,164-204,255-259,263,272,276,281,301-305,320-344,381-386,400
+  s_7ceafd9d18ff51::t_425b28a825494d 248,251
+.github/workflows/deploy.yml
+  s_7ceafd9d18ff51::t_5d5add14e68feb 30-34,45-52,59
+deploy/minecraft-deploy
+  s_7ceafd9d18ff51::t_4be88a17541ef2 1-34
+deploy/minecraft.service
+  s_7ceafd9d18ff51::t_803474dc8f2a43 1-19
+deploy/user-data.sh
+  s_7ceafd9d18ff51::t_d47b214d3cfc19 47,74-78,81-86,139-142
+src/main/java/dev/aigod/AdminServer.java
+  s_7ceafd9d18ff51::t_7764ba263ad04f 1-237
+src/main/java/dev/aigod/ConversationStore.java
+  s_7ceafd9d18ff51::t_860e237be6bf70 22-26,33,36
+src/main/java/dev/aigod/MinecraftChatText.java
+  s_7ceafd9d18ff51::t_c88ff3925f76fd 1-13
+src/main/java/dev/aigod/ScheduleStore.java
+  s_7ceafd9d18ff51::t_5651e25dd02206 1-47
+src/main/java/dev/aigod/ScheduledEvent.java
+  s_7ceafd9d18ff51::t_f1f04109cc5a93 1-17
+src/main/resources/admin/app.js
+  s_7ceafd9d18ff51::t_1159d1e4f16a51 1-136
+src/main/resources/admin/index.html
+  s_7ceafd9d18ff51::t_6cdcfa20f8469b 1-62
+src/main/resources/admin/styles.css
+  s_7ceafd9d18ff51::t_4b5747cd036927 1-102
+src/test/java/dev/aigod/MinecraftChatTextTest.java
+  s_7ceafd9d18ff51::t_342480d77b1818 1-13
+website/index.html
+  s_7ceafd9d18ff51::t_72c6527650928d 6-10,15-16,21,24-28
+website/styles.css
+  s_7ceafd9d18ff51::t_7cf09be1693e9c 2-10,13,24-27,32-33,35,37-38,41,45-49,52,54-61,69,73,75-94,97-98,100-101,104-105,107-112,115-118,126-131,134-135,137-139,142-147,150-157,159-163,165-171,173-180,184-189,193-194,197-199
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "c98800fa77612c9d6844ccca9f6e367ca820391a",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    },
+    "s_ba5fa89652f544": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05b1d-3b7d-7c72-b821-64439652f81d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
