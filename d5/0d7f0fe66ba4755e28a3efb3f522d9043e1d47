@@ -12,11 +12,13 @@ website/_headers
   s_7ceafd9d18ff51::t_77b1789cf7555c 1-4
 src/main/java/dev/aigod/QuestManager.java
   s_7ceafd9d18ff51::t_f99c0c0ccdf753 6,9,149,151,166
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 77,101,110,114,122
 build.gradle
   s_7ceafd9d18ff51::t_7d9ba7d4a902ab 2,18-19
   s_7ceafd9d18ff51::t_80daec9fc4285b 21,34,43-44
 src/main/java/dev/aigod/GodService.java
   s_7ceafd9d18ff51::t_f99c0c0ccdf753 9,174-176,187,224,228,235,252
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 54,69,81,251
 README.md
   s_7ceafd9d18ff51::t_34dae31bbc073a 32-35,226-228
   s_7ceafd9d18ff51::t_ef09eb49b5bbe9 229
@@ -29,6 +31,10 @@ src/main/resources/fabric.mod.json
   s_7ceafd9d18ff51::t_80daec9fc4285b 15-16
 src/main/java/dev/aigod/AiGodMod.java
   s_7ceafd9d18ff51::t_80daec9fc4285b 32
+src/main/java/dev/aigod/DailyChallengeManager.java
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 39
+src/main/java/dev/aigod/DayCycle.java
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 3
 ---
 {
   "schema_version": "authorship/3.0.0",
