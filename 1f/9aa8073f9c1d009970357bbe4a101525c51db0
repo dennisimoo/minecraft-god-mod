@@ -1,0 +1,164 @@
+.codex/hooks.json
+  s_7ceafd9d18ff51::t_e2be2eed257a4e 1-15
+src/test/java/dev/aigod/QuestTest.java
+  s_7ceafd9d18ff51::t_6fef87425bc574 18-20,39,49,53-54,60,65
+src/test/java/dev/aigod/ServerGoalTest.java
+  s_7ceafd9d18ff51::t_4d59123c3a9d88 14
+src/main/java/dev/aigod/Quest.java
+  s_7ceafd9d18ff51::t_ef6d43677f9425 32,47-48
+src/test/java/dev/aigod/DailyStoreTest.java
+  s_7ceafd9d18ff51::t_4d59123c3a9d88 28,39,46
+src/test/java/dev/aigod/GodServiceChatTurnTest.java
+  s_7ceafd9d18ff51::t_6fef87425bc574 11,15,17
+src/main/resources/admin/styles.css
+  s_7ceafd9d18ff51::t_75a8e152b009ab 159-160
+  s_7ceafd9d18ff51::t_11a0ac3d232110 11,71,129,133,143,158
+  s_7ceafd9d18ff51::t_56668a2a7774d1 55
+  s_7ceafd9d18ff51::t_280ae1ef992bee 12-13,46,48-53,95,102
+  s_7ceafd9d18ff51::t_c4ef74d629ecac 108,110-114,116,120,145-147
+  s_7ceafd9d18ff51::t_aa475348263b5a 22-23
+  s_7ceafd9d18ff51::t_248d1367732e9f 35,39-45,47,54,66-67,134-135,139
+  s_7ceafd9d18ff51::t_b7ea251f03dfa2 37-38,109,118,150,152,154,157,163,175
+  s_7ceafd9d18ff51::t_ff5f70dda51a27 19-20,27,29-34,36
+  s_7ceafd9d18ff51::t_114cdf08df6c9a 3-10,14,24,28,60,62,68,70,72,75-76,82-83,85,87-89,97-98,100-101,105-107,115,117,119,123,126-127,142,144,148-149,151,153,155-156,170-171,173
+  s_7ceafd9d18ff51::t_c8172f1e2054e6 69,90-94,96,99,104,121-122,125,164,168-169,172
+  s_7ceafd9d18ff51::t_9934fd9d23b3d6 128,130-132,138,140,174
+  s_7ceafd9d18ff51::t_7874123a7dabc9 136-137
+src/main/resources/admin/app.js
+  s_7ceafd9d18ff51::t_75a8e152b009ab 7,10,236-237,249-259,261-266,276
+  s_7ceafd9d18ff51::t_8e4c31df271b5f 1,4,8,11,21-28,35-39,52-55,57-91,100,114,125,133,152-153,156-158,164,166-176,178,181,183,196,205-206,235,239,242,244
+  s_7ceafd9d18ff51::t_19bbe4f2e43c98 29-34,40-51,165
+  s_7ceafd9d18ff51::t_114cdf08df6c9a 96,103-104,106-112
+  s_7ceafd9d18ff51::t_9f5e4555d3bcf6 207-226,230,232,238,245,277-280
+  s_7ceafd9d18ff51::t_9a563d2cc9088b 130
+  s_7ceafd9d18ff51::t_4b8c1dd89caa6f 9,154-155,182,184-185,187-188,195,197-200,202,268-273,275
+  s_7ceafd9d18ff51::t_248d1367732e9f 189-194
+  s_7ceafd9d18ff51::t_c4ef74d629ecac 12-17,19-20,97-98,101-102,105,122-124,126-128,131,159-163
+  s_7ceafd9d18ff51::t_c8172f1e2054e6 18
+  s_7ceafd9d18ff51::t_9934fd9d23b3d6 5-6,186,201,203-204,274
+  s_7ceafd9d18ff51::t_a557c9eba499ef 56,241
+.github/workflows/deploy.yml
+  s_7ceafd9d18ff51::t_7e317d186d17f2 42-48,50,67
+  s_7ceafd9d18ff51::t_2715f87d2349b7 64-65
+  s_7ceafd9d18ff51::t_9a563d2cc9088b 37
+deploy/minecraft-deploy
+  s_7ceafd9d18ff51::t_9c2f57ff01e281 11-13
+  s_7ceafd9d18ff51::t_7e317d186d17f2 40-47
+  s_7ceafd9d18ff51::t_1b9f13e39381c4 39
+src/main/resources/admin/index.html
+  s_7ceafd9d18ff51::t_75a8e152b009ab 45
+  s_7ceafd9d18ff51::t_c8172f1e2054e6 32-35,43-44,46-47,49-58,60-70
+  s_7ceafd9d18ff51::t_9934fd9d23b3d6 36-42
+  s_7ceafd9d18ff51::t_4b12e1dd20b9ae 14
+  s_7ceafd9d18ff51::t_b7ea251f03dfa2 6,25,71-72
+  s_7ceafd9d18ff51::t_114cdf08df6c9a 7-9,18-22,26-29
+src/main/java/dev/aigod/ServerGoal.java
+  s_7ceafd9d18ff51::t_4d59123c3a9d88 27
+src/main/java/dev/aigod/OpenAiGodClient.java
+  s_7ceafd9d18ff51::t_df0a061dab156e 192,249
+  s_7ceafd9d18ff51::t_2ea0292d979643 48-49
+  s_7ceafd9d18ff51::t_ed0d50827ec589 31-34,36-42,45-47,54-56,65,78-81
+  s_7ceafd9d18ff51::t_1fa7b4fcc81279 94,114-115,127,129,185-186,242-243
+  s_7ceafd9d18ff51::t_4f8e19ea64334b 44,51-53,59-60,62-64,66,68-72,74-77,83-87
+src/main/resources/fabric.mod.json
+  s_7ceafd9d18ff51::t_df0a061dab156e 6
+src/main/java/dev/aigod/DailyChallengeManager.java
+  s_7ceafd9d18ff51::t_4d59123c3a9d88 71,77,90
+  s_7ceafd9d18ff51::t_114cdf08df6c9a 116-130
+  s_7ceafd9d18ff51::t_c04ac2cbd06ad3 165
+  s_7ceafd9d18ff51::t_dfc613bbaf68b4 133-136
+deploy/user-data.sh
+  s_7ceafd9d18ff51::t_9c2f57ff01e281 22,30-31,58,63
+.gitignore
+  s_7ceafd9d18ff51::t_b642d7d68ccad9 10
+  s_7ceafd9d18ff51::t_e2be2eed257a4e 5-7
+  s_7ceafd9d18ff51::t_961bfcd94e49ca 4
+README.md
+  s_7ceafd9d18ff51::t_6633f5ce995a33 1,3-5,12,14,16-19,21-23,25-27,29-31,33-34,36,38,40-47,49-50,59-62,65-67,70,73,75,77-79,81,83,86-90,93,95-96,98-102,105-106,108,110-114,116-118,120-121,123,125-127,129-133,135-137,139-142,144-145
+  s_7ceafd9d18ff51::t_9a563d2cc9088b 52-57
+src/main/java/dev/aigod/AiGodMod.java
+  s_7ceafd9d18ff51::t_dfc613bbaf68b4 77
+AGENTS.md
+  s_7ceafd9d18ff51::t_bb50161ad5bd2f 1-18
+src/main/java/dev/aigod/AdminServer.java
+  s_7ceafd9d18ff51::t_046ea1ee3a30db 87,90,96-98
+  s_7ceafd9d18ff51::t_75a8e152b009ab 15,89,102,106-111,116-118,124-126,128-134,209-218
+  s_7ceafd9d18ff51::t_9f5e4555d3bcf6 60-61,68,74-86,113,196,219
+  s_7ceafd9d18ff51::t_9fb33338c5d780 220
+website/index.html
+  s_7ceafd9d18ff51::t_4e5ac4cf595d02 12,17-30,32-55,58-59
+  s_7ceafd9d18ff51::t_19784742ffaa46 31,56-57
+  s_7ceafd9d18ff51::t_502a68501cd73f 9
+  s_7ceafd9d18ff51::t_280ae1ef992bee 13
+  s_7ceafd9d18ff51::t_a6373a26028147 6-7,10-11,63,67-68
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_ef6d43677f9425 24,30,32,53,63-64,68,85,88-89,97,106,110,115-117,119,122,124,129
+website/styles.css
+  s_7ceafd9d18ff51::t_280ae1ef992bee 7-14,66,75,97,99,106,112-113,120,135,149,152,154,158-159,164-165,181,183-188,193,195-197,206-207,217
+  s_7ceafd9d18ff51::t_4e5ac4cf595d02 25,38-41,43,46-47,54-55,67-74,76,79-96,98,100-105,107-111,114-119,211-213,219-224
+  s_7ceafd9d18ff51::t_a6373a26028147 3-6,19,27-28,34,42,44-45,48-53,56,60-65,121-122,130,134,136-139,145-147,163,168-169,171,174-176,179-180,182,191-192,194,201-203,205,208-210,214-216,218,228-231,235,239-240
+src/main/java/dev/aigod/DailyStore.java
+  s_7ceafd9d18ff51::t_4d59123c3a9d88 6-8,17,47-55,61-74
+  s_7ceafd9d18ff51::t_c59a7202ecd684 75-76
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_c3c95539889319 57,67-69,78,87,96-98,103,176,195,233,262,264-265,513,516,526,546,586,595,653,669,674,681-682,685-686
+  s_7ceafd9d18ff51::t_dfc613bbaf68b4 77,217,263,521
+  s_7ceafd9d18ff51::t_19bbe4f2e43c98 596,619
+  s_7ceafd9d18ff51::t_9a563d2cc9088b 465-466
+  s_7ceafd9d18ff51::t_ed0d50827ec589 99-101,582-583,613,623
+  s_7ceafd9d18ff51::t_c4ef74d629ecac 457
+  s_7ceafd9d18ff51::t_df0a061dab156e 450-451,468
+  s_7ceafd9d18ff51::t_114cdf08df6c9a 452
+.codex/skills/graphify/.graphify_version
+  s_7ceafd9d18ff51::t_2c25c0ae12f0a0 1
+.codex/skills/graphify/SKILL.md
+  s_7ceafd9d18ff51::t_dc73e6a827df4b 1-710
+.codex/skills/graphify/references/add-watch.md
+  s_7ceafd9d18ff51::t_d675bdc05072fb 1-56
+.codex/skills/graphify/references/exports.md
+  s_7ceafd9d18ff51::t_d49e8ef9b53efd 1-87
+.codex/skills/graphify/references/extraction-spec.md
+  s_7ceafd9d18ff51::t_2fef5a88b70f2d 1-31
+.codex/skills/graphify/references/github-and-merge.md
+  s_7ceafd9d18ff51::t_69dfb3ecff1967 1-46
+.codex/skills/graphify/references/hooks.md
+  s_7ceafd9d18ff51::t_1c69bb89dffd70 1-33
+.codex/skills/graphify/references/query.md
+  s_7ceafd9d18ff51::t_cb9a2d35343dfe 1-311
+.codex/skills/graphify/references/transcribe.md
+  s_7ceafd9d18ff51::t_47ea84cb88c141 1-52
+.codex/skills/graphify/references/update.md
+  s_7ceafd9d18ff51::t_66994b443fc748 1-210
+graphify-out/.graphify_analysis.json
+  s_7ceafd9d18ff51::t_f997f0cca9401f 1-597
+graphify-out/.graphify_labels.json
+  s_7ceafd9d18ff51::t_e0f6ba07af1fc7 1-29
+graphify-out/.graphify_labels.json.sig
+  s_7ceafd9d18ff51::t_0153d082f816a3 1
+graphify-out/.graphify_semantic_marker
+  s_7ceafd9d18ff51::t_72420506d635e8 1
+graphify-out/GRAPH_REPORT.md
+  s_7ceafd9d18ff51::t_82648f8bca18f7 1-162
+graphify-out/graph.html
+  s_7ceafd9d18ff51::t_110f38e1143487 1-345
+graphify-out/graph.json
+  s_7ceafd9d18ff51::t_a507d9f1b435c3 1-14713
+graphify-out/manifest.json
+  s_7ceafd9d18ff51::t_02795702251672 1-290
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "1f9aa8073f9c1d009970357bbe4a101525c51db0",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
