@@ -1,0 +1,98 @@
+.github/workflows/deploy.yml
+  s_7ceafd9d18ff51::t_b59063387ed8d8 30-32,43-46,53
+src/test/java/dev/aigod/MinecraftChatTextTest.java
+  s_7ceafd9d18ff51::t_9972928dc7eac2 1-13
+README.md
+  s_7ceafd9d18ff51::t_b2b80987a5f808 171,248-250,257-262
+  s_7ceafd9d18ff51::t_b59063387ed8d8 6,42,47-50,60-63,170,246-247,254-256
+  s_7ceafd9d18ff51::t_251aa1300fda76 216
+  s_7ceafd9d18ff51::t_72a1015467392a 12-13,32-35,74-75
+  s_7ceafd9d18ff51::t_d0966e6cea408b 114-118,251-253
+  s_7ceafd9d18ff51::t_e883df629a93c4 263
+src/main/java/dev/aigod/MinecraftChatText.java
+  s_7ceafd9d18ff51::t_bdeb80f0d1399a 7-8,11
+  s_7ceafd9d18ff51::t_9972928dc7eac2 1-6,9-10,12-13
+src/main/resources/admin/styles.css
+  s_7ceafd9d18ff51::t_335d1a40a488f6 1-61,63-68,70-80
+  s_7ceafd9d18ff51::t_398fb3929cca3d 62,69
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_1a749d09c2deed 131,141
+  s_7ceafd9d18ff51::t_388939e3cbd9c4 34,45,130,132,139,155-156,176,374
+  s_7ceafd9d18ff51::t_9972928dc7eac2 72-73,269-271,308-309,332
+  s_7ceafd9d18ff51::t_9d0f3a08cffa4d 4-6,10,184-185,209-227,230-236,241-242,259-263,324-325
+  s_7ceafd9d18ff51::t_6e1369d22b718e 159-163
+  s_7ceafd9d18ff51::t_f652df9e42ab5e 93-106
+  s_7ceafd9d18ff51::t_89109271c58e3f 15
+  s_7ceafd9d18ff51::t_ba71681dc98810 59-60,92,107-108,186,265,268,272
+  s_7ceafd9d18ff51::t_557a17fb3cfb26 9,204-208,237-240,243-258,386-387
+  s_7ceafd9d18ff51::t_29df0389e4a76f 264
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_a64961a272fab9 26
+  s_7ceafd9d18ff51::t_1a749d09c2deed 25
+  s_7ceafd9d18ff51::t_72a1015467392a 92
+  s_7ceafd9d18ff51::t_9972928dc7eac2 120,140,144
+website/styles.css
+  s_7ceafd9d18ff51::t_8c559af9782ecb 52,56,59,176,185
+  s_7ceafd9d18ff51::t_1ec93591b1b11c 55,57-58
+  s_7ceafd9d18ff51::t_e7d8973a3085a4 45,47-48
+  s_7ceafd9d18ff51::t_76ba9cffaab87a 60-61
+  s_7ceafd9d18ff51::t_249aefa65b4529 2-10,24-26,87,93-94,111-112,147,177,189,198-199
+  s_7ceafd9d18ff51::t_7ec2d263fda9b2 13,32-33,35,37-38,41,69,85-86,88-92,107-110,115-118,126-129,131,134-135,137,139,142-146,150-157,159-163,165-167,171,173-175,178-180,184,186-188,193-194,197
+  s_7ceafd9d18ff51::t_9461b6c223f4b0 27,46
+  s_7ceafd9d18ff51::t_c365a47df575a9 49,73,75-84,97-98,100-101,104-105,130,138,168-170
+  s_7ceafd9d18ff51::t_7ffdc4fd43e81d 54
+website/index.html
+  s_7ceafd9d18ff51::t_11f99c72bb02f3 7
+  s_7ceafd9d18ff51::t_213db047eea15c 9
+  s_7ceafd9d18ff51::t_8c559af9782ecb 16
+  s_7ceafd9d18ff51::t_249aefa65b4529 6,21
+  s_7ceafd9d18ff51::t_7ec2d263fda9b2 24-28
+  s_7ceafd9d18ff51::t_e7d8973a3085a4 8,15
+src/main/java/dev/aigod/OpenAiGodClient.java
+  s_7ceafd9d18ff51::t_f8aafa32fcac34 290-292,336-339
+  s_7ceafd9d18ff51::t_388939e3cbd9c4 24,212-216,220,229,233,238,274-289,293-298,335
+  s_7ceafd9d18ff51::t_9972928dc7eac2 28-33,65-66,85
+  s_7ceafd9d18ff51::t_9d0f3a08cffa4d 42-44,113-145,258-259
+  s_7ceafd9d18ff51::t_33c34550dad109 340,354
+  s_7ceafd9d18ff51::t_ba71681dc98810 35-37
+  s_7ceafd9d18ff51::t_cb842193bf6cfc 34
+src/main/resources/admin/index.html
+  s_7ceafd9d18ff51::t_398fb3929cca3d 13,20-21,28,31,42
+  s_7ceafd9d18ff51::t_335d1a40a488f6 1-12,14-19,22,24-27,29-30,32-41,43-51
+  s_7ceafd9d18ff51::t_72b5569b9ac970 23
+src/main/resources/admin/app.js
+  s_7ceafd9d18ff51::t_72b5569b9ac970 74,76
+  s_7ceafd9d18ff51::t_479788b2671197 1-73,75,77-95
+src/main/java/dev/aigod/ConversationStore.java
+  s_7ceafd9d18ff51::t_388939e3cbd9c4 22-26,33,36
+deploy/user-data.sh
+  s_7ceafd9d18ff51::t_b2b80987a5f808 74-78,81-86
+  s_7ceafd9d18ff51::t_b59063387ed8d8 139-142
+  s_7ceafd9d18ff51::t_ba71681dc98810 47
+src/main/java/dev/aigod/AiGodMod.java
+  s_7ceafd9d18ff51::t_1a749d09c2deed 20,60,65-66
+  s_7ceafd9d18ff51::t_ba71681dc98810 9,28-29
+  s_7ceafd9d18ff51::t_b2b80987a5f808 50-59
+  s_7ceafd9d18ff51::t_60b6b7bce93602 30-31
+src/main/java/dev/aigod/AdminServer.java
+  s_7ceafd9d18ff51::t_b49c00fca42923 29,37,41-42,49,84-87,90-92,94,99-100,109,113-114,140,142-143,145,178
+  s_7ceafd9d18ff51::t_9c3d17464429f0 1-20,22-23,25-28,30-36,39-40,43-44,47-48,51-65,67-83,93,95-98,101-103,105-108,110-112,115-139,141,144,146-149,151-177,179-188,204-227
+  s_7ceafd9d18ff51::t_b2b80987a5f808 21,24,38,45-46,50,66,150,189-203
+  s_7ceafd9d18ff51::t_72b5569b9ac970 88-89,104
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "e82d3fa3e08dbef4c5c4cc06b6d102ea7356f65a",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
