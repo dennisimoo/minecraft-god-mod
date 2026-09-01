@@ -1,0 +1,19 @@
+src/main/java/dev/aigod/OpenAiGodClient.java
+  s_7ceafd9d18ff51::t_89e81302f63d61 28-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "06cbbf398e74f2ff0aded9e7a88364eba29e98c1",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
