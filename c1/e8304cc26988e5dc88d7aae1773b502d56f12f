@@ -1,0 +1,55 @@
+src/main/java/dev/aigod/AiGodMod.java
+  s_7ceafd9d18ff51::t_80daec9fc4285b 32
+src/main/resources/fabric.mod.json
+  s_7ceafd9d18ff51::t_80daec9fc4285b 15-16
+.github/workflows/deploy.yml
+  s_7ceafd9d18ff51::t_80daec9fc4285b 24
+src/main/java/dev/aigod/DayCycle.java
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 3
+README.md
+  s_7ceafd9d18ff51::t_34dae31bbc073a 32-35,226-228
+  s_7ceafd9d18ff51::t_77b1789cf7555c 3-4
+  s_7ceafd9d18ff51::t_80daec9fc4285b 22,118,120-121,125,154,242
+  s_7ceafd9d18ff51::t_f99c0c0ccdf753 25,241
+  s_7ceafd9d18ff51::t_ef09eb49b5bbe9 229
+website/index.html
+  s_7ceafd9d18ff51::t_e58d717c9b8f25 6-7,17,23-24,26-27
+  s_7ceafd9d18ff51::t_77b1789cf7555c 1-5,8-16,18-22,25,28-44
+gradle.properties
+  s_7ceafd9d18ff51::t_80daec9fc4285b 5-8
+deploy/user-data.sh
+  s_7ceafd9d18ff51::t_506979b69adcf6 46
+  s_7ceafd9d18ff51::t_80daec9fc4285b 8,14,17
+website/styles.css
+  s_7ceafd9d18ff51::t_e58d717c9b8f25 56-58,60-66
+  s_7ceafd9d18ff51::t_77b1789cf7555c 1-55,59,67-240
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 54,69,81,251
+  s_7ceafd9d18ff51::t_f99c0c0ccdf753 9,174-176,187,224,228,235,252
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_f99c0c0ccdf753 6,9,149,151,166
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 77,101,110,114,122
+website/_headers
+  s_7ceafd9d18ff51::t_77b1789cf7555c 1-4
+build.gradle
+  s_7ceafd9d18ff51::t_7d9ba7d4a902ab 2,18-19
+  s_7ceafd9d18ff51::t_80daec9fc4285b 21,34,43-44
+src/main/java/dev/aigod/DailyChallengeManager.java
+  s_7ceafd9d18ff51::t_2325c3b2f5bcc2 39
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "c1e8304cc26988e5dc88d7aae1773b502d56f12f",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
