@@ -1,0 +1,25 @@
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_29ab307deb8d9a 206-209,216-218
+src/main/java/dev/aigod/DailyStore.java
+  s_7ceafd9d18ff51::t_29ab307deb8d9a 5-6,8,48-63
+README.md
+  s_7ceafd9d18ff51::t_29ab307deb8d9a 101-104
+src/test/java/dev/aigod/DailyStoreTest.java
+  s_7ceafd9d18ff51::t_29ab307deb8d9a 1-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "57019bba0aa08f1276d20b5a192a5f6b1872deb7",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
