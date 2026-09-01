@@ -1,0 +1,26 @@
+deploy/minecraft-deploy
+  s_7ceafd9d18ff51::t_7d1fc71ee2ac8c 7-10,28-33
+README.md
+  s_7ceafd9d18ff51::t_0b39f9a9dcefb6 320-325
+  s_7ceafd9d18ff51::t_0e12ea5c2eb2bd 85-87
+.github/workflows/deploy.yml
+  s_7ceafd9d18ff51::t_7d1fc71ee2ac8c 6-16
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_7d1fc71ee2ac8c 10,65-66,426,508-516
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "c62e8306089f63a86099ff7bf972232b530c61bc",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
