@@ -1,0 +1,61 @@
+settings.gradle
+  s_7ceafd9d18ff51::t_1dd77309d7b5ec 1-9
+src/test/java/dev/aigod/QuestTest.java
+  s_7ceafd9d18ff51::t_fe0040c165fcf7 1-35
+gradle.properties
+  s_7ceafd9d18ff51::t_1dd77309d7b5ec 1-12
+src/main/java/dev/aigod/ConversationStore.java
+  s_7ceafd9d18ff51::t_7e08ba51469b48 1-39
+src/main/java/dev/aigod/OpenAiGodClient.java
+  s_7ceafd9d18ff51::t_166fbcb9d20f17 1-221
+README.md
+  s_7ceafd9d18ff51::t_099f31b964288b 1-150
+LICENSE
+  s_7ceafd9d18ff51::t_1dd77309d7b5ec 1-21
+src/main/resources/fabric.mod.json
+  s_7ceafd9d18ff51::t_1dd77309d7b5ec 1-19
+.gitignore
+  s_7ceafd9d18ff51::t_1dd77309d7b5ec 1-5
+src/main/java/dev/aigod/QuestStore.java
+  s_7ceafd9d18ff51::t_3c4f0a5886809e 1-47
+src/main/java/dev/aigod/AiGodMod.java
+  s_7ceafd9d18ff51::t_66c1c5d4afc6da 23,33-34,36-39,63-75
+  s_7ceafd9d18ff51::t_fe0040c165fcf7 1-7,9-21,25-32,35,40-62,76-77
+  s_7ceafd9d18ff51::t_90ac6bed294640 8,22,24
+src/main/java/dev/aigod/Quest.java
+  s_7ceafd9d18ff51::t_3c4f0a5886809e 1-12,15-18,21-26,29-52,55-56
+  s_7ceafd9d18ff51::t_e03ef0da2e6c03 13-14,19-20,27-28,53-54
+build.gradle
+  s_7ceafd9d18ff51::t_d3ffce8cae0172 24
+  s_7ceafd9d18ff51::t_90ac6bed294640 19-20
+  s_7ceafd9d18ff51::t_d3b09357175f79 18
+  s_7ceafd9d18ff51::t_1dd77309d7b5ec 1-17,21-23,25-46
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_65ac614e50d2a0 54,62,78,184
+  s_7ceafd9d18ff51::t_f7873b931e9510 1-53,55-61,63-77,79-183,185-192
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_fe0040c165fcf7 1-39,42-111,113-139,141,143-161
+  s_7ceafd9d18ff51::t_7e08ba51469b48 40-41,112,140,142
+gradle/wrapper/gradle-wrapper.properties
+  s_7ceafd9d18ff51::t_5f804f8baf94eb 1-9
+gradlew
+  s_7ceafd9d18ff51::t_3544441cc99d86 1-248
+gradlew.bat
+  s_7ceafd9d18ff51::t_ac678a68cdb855 1-82
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "33bcddafd1c045b3af5ec11f833b55be0f20ae12",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "randomperson12344 <4dennisk@gmail.com>"
+    }
+  }
+}
