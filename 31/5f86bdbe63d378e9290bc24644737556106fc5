@@ -1,0 +1,48 @@
+website/index.html
+  s_7ceafd9d18ff51::t_5393cfce92ada2 6-7,22-23,25-26,33
+  s_7ceafd9d18ff51::t_77b1789cf7555c 1-5,8-21,24,27-32,34-45
+gradle.properties
+  s_7ceafd9d18ff51::t_80daec9fc4285b 5-8
+.github/workflows/deploy.yml
+  s_7ceafd9d18ff51::t_80daec9fc4285b 24
+deploy/user-data.sh
+  s_7ceafd9d18ff51::t_80daec9fc4285b 8,14,17
+  s_7ceafd9d18ff51::t_506979b69adcf6 46
+website/_headers
+  s_7ceafd9d18ff51::t_77b1789cf7555c 1-4
+src/main/java/dev/aigod/QuestManager.java
+  s_7ceafd9d18ff51::t_f99c0c0ccdf753 6,9,111,113,128
+build.gradle
+  s_7ceafd9d18ff51::t_7d9ba7d4a902ab 2,18-19
+  s_7ceafd9d18ff51::t_80daec9fc4285b 21,34,43-44
+src/main/java/dev/aigod/GodService.java
+  s_7ceafd9d18ff51::t_f99c0c0ccdf753 9,111-113,122,137,141,148,160-161
+README.md
+  s_7ceafd9d18ff51::t_34dae31bbc073a 32-35,183-185
+  s_7ceafd9d18ff51::t_ef09eb49b5bbe9 186
+  s_7ceafd9d18ff51::t_f99c0c0ccdf753 25,198
+  s_7ceafd9d18ff51::t_80daec9fc4285b 22,79,81-82,86,115,199
+  s_7ceafd9d18ff51::t_77b1789cf7555c 3-4
+website/styles.css
+  s_7ceafd9d18ff51::t_77b1789cf7555c 1-248
+src/main/resources/fabric.mod.json
+  s_7ceafd9d18ff51::t_80daec9fc4285b 15-16
+src/main/java/dev/aigod/AiGodMod.java
+  s_7ceafd9d18ff51::t_80daec9fc4285b 32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "315f86bdbe63d378e9290bc24644737556106fc5",
+  "prompts": {},
+  "sessions": {
+    "s_7ceafd9d18ff51": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a05a22-17e8-7e02-b9a7-fa5d46254e9d",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
