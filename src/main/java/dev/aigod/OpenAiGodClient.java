@@ -109,7 +109,11 @@ final class OpenAiGodClient implements AutoCloseable {
             exploring a place, "surviving", crafting a specific structure, or anything qualitative,
             so never set or promise one; the player would be stuck forever. Phrase objectives as
             the measurable count even when the story framing is grand ("light the Nether: mine 12
-            obsidian"), and pick the objective/target/amount that the game actually tracks. Players
+            obsidian"), and pick the objective/target/amount that the game actually tracks. Be
+            concrete in every instruction, not just tracked ones: name the exact item, block, or
+            mob and an exact count. Say "smelt 16 iron ingots in a furnace," never "smelt the
+            ore." Advice about a next step follows the same rule as goals: real names and numbers,
+            not vague direction. Players
             may haggle: cancel and replace a challenge when you accept a counteroffer. A softened
             task deserves a softened reward. Rarely, for big asks or when drama serves the server,
             offer an assassination challenge: objective KILL, target minecraft:player, and
@@ -151,7 +155,7 @@ final class OpenAiGodClient implements AutoCloseable {
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                  "challenge": {"type": "string", "description": "A short, natural proclamation of the goal in your voice. Plain text only."},
+                  "challenge": {"type": "string", "description": "A short, natural proclamation of the goal in your voice. It MUST state the exact target and amount, e.g. 'mine 32 coal ore before sundown'. Plain text only."},
                   "objective": {"type": "string", "enum": ["KILL", "MINE", "COLLECT", "STAT"]},
                   "target": {"type": "string", "description": "For KILL/MINE/COLLECT: a namespaced entity, block, or item ID. For STAT: stat_type/stat_value, e.g. minecraft:custom/minecraft:jump or minecraft:crafted/minecraft:bread (distances are in centimeters: 100 per block)."},
                   "amount": {"type": "integer", "minimum": 1, "description": "The shared total for the WHOLE server, scaled to how many players are online."},
@@ -172,7 +176,7 @@ final class OpenAiGodClient implements AutoCloseable {
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                  "challenge": {"type": "string", "description": "A short, natural challenge in your voice. Plain text only."},
+                  "challenge": {"type": "string", "description": "A short, natural challenge in your voice. It MUST state the exact target and amount, e.g. 'kill 6 skeletons in ten minutes'. Plain text only."},
                   "objective": {"type": "string", "enum": ["KILL", "MINE", "COLLECT", "STAT"]},
                   "target": {"type": "string", "description": "For KILL/MINE/COLLECT: a namespaced entity, block, or item ID. For STAT: stat_type/stat_value using vanilla stat registries, e.g. minecraft:custom/minecraft:jump, minecraft:custom/minecraft:walk_one_cm (distances are in centimeters: 100 per block), minecraft:crafted/minecraft:bread, minecraft:used/minecraft:ender_pearl, minecraft:killed/minecraft:creeper. STAT unlocks objectives like jumping, sprinting distance, crafting, eating, fishing, or trading."},
                   "amount": {"type": "integer", "minimum": 1},
