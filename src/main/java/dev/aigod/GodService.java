@@ -65,6 +65,7 @@ final class GodService implements AutoCloseable {
     void hear(ServerPlayer player, String message) {
         long nowMillis = System.currentTimeMillis();
         chatCounts.merge(player.getUUID(), 1, Integer::sum);
+        broadcastChat(Component.literal("<" + player.getGameProfile().name() + "> " + message));
         ChatTurn pending = queue.peekLast();
         if (pending == null || pending.systemEvent || pending.started
                 || !pending.playerId.equals(player.getUUID()) || !pending.isRecent(nowMillis)) {

@@ -21,8 +21,14 @@ public final class AiGodMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ServerMessageEvents.CHAT_MESSAGE.register((message, player, parameters) -> {
-            if (god != null) god.hear(player, message.signedContent());
+        // Route player chat through the mod and rebroadcast it as a system message. On this
+        // server the vanilla signed-chat path does not reach clients (they see system messages
+        // like the god's, but not each other's signed chat), so we cancel vanilla delivery
+        // (return false) and re-send every message through the system path that works.
+        ServerMessageEvents.ALLOW_CHAT_MESSAGE.register((message, player, parameters) -> {
+            if (god == null) return true;
+            god.hear(player, message.signedContent());
+            return false;
         });
 
         ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
