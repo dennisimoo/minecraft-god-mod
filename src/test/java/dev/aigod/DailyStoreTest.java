@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -52,5 +53,44 @@ class DailyStoreTest {
         assertEquals(12, state.lastIssuedDay);
         assertTrue(state.pastGoals.isEmpty());
         assertNull(state.activeGoal);
+    }
+
+    @Test
+    void loadsAGoalSavedBeforeContributionTrackingExisted() throws Exception {
+        // A save written by an older build has no contribution maps at all. Gson allocates
+        // ServerGoal without running field initializers, so these come back null unless the
+        // store normalizes them; the first kill after an update would otherwise throw.
+        Path path = directory.resolve("daily.json");
+        Files.writeString(path, """
+                {
+                  "lastIssuedDay": 4,
+                  "chapter": 1,
+                  "winStreak": 0,
+                  "pastGoals": ["kill 3 zombies together"],
+                  "activeGoal": {
+                    "challenge": "kill 3 zombies together",
+                    "objective": "KILL",
+                    "target": "minecraft:zombie",
+                    "amount": 3,
+                    "day": 4,
+                    "deadlineDayTime": 108000,
+                    "rewardCommand": "give {player} bread 4",
+                    "punishmentCommand": "summon lightning_bolt ~ ~ ~",
+                    "trial": false,
+                    "eventProgress": 1
+                  }
+                }
+                """);
+
+        DailyStore.State state = new DailyStore(path, LoggerFactory.getLogger(DailyStoreTest.class)).load();
+
+        assertNotNull(state.activeGoal);
+        assertEquals(1, state.activeGoal.progress());
+        assertTrue(state.activeGoal.contributions().isEmpty());
+        // The real crash path: recording against a goal restored from the old format.
+        assertTrue(state.activeGoal.recordEvent(UUID.randomUUID(),
+                Quest.Objective.KILL, "minecraft:zombie"));
+        assertEquals(2, state.activeGoal.progress());
+        assertEquals(1, state.activeGoal.leaderboard().size());
     }
 }

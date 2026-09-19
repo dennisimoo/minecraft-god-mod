@@ -54,6 +54,7 @@ final class DailyStore {
                 if (state == null) return new State();
                 if (state.pastGoals == null) state.pastGoals = new ArrayList<>();
                 if (state.relics == null) state.relics = new ArrayList<>();
+                if (state.activeGoal != null) state.activeGoal.normalize();
                 if (state.chapter < 1) state.chapter = 1;
                 return state;
             }
