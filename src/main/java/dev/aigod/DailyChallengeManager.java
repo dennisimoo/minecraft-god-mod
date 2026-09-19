@@ -168,12 +168,12 @@ final class DailyChallengeManager {
         return goal;
     }
 
-    void recordKill(String entityId) {
-        recordEvent(Quest.Objective.KILL, entityId);
+    void recordKill(UUID playerId, String entityId) {
+        recordEvent(playerId, Quest.Objective.KILL, entityId);
     }
 
-    void recordMine(String blockId) {
-        recordEvent(Quest.Objective.MINE, blockId);
+    void recordMine(UUID playerId, String blockId) {
+        recordEvent(playerId, Quest.Objective.MINE, blockId);
     }
 
     String statusLine() {
@@ -202,12 +202,48 @@ final class DailyChallengeManager {
         value.addProperty("amount", goal.amount());
         value.addProperty("ticks_left", Math.max(0,
                 goal.deadlineDayTime() - server.overworld().getOverworldClockTime()));
+        com.google.gson.JsonArray contributors = new com.google.gson.JsonArray();
+        for (java.util.Map.Entry<UUID, Integer> entry : goal.leaderboard()) {
+            String name = playerName(entry.getKey());
+            if (name == null) continue;
+            JsonObject row = new JsonObject();
+            row.addProperty("player", name);
+            row.addProperty("amount", entry.getValue());
+            contributors.add(row);
+        }
+        value.add("contributors", contributors);
         return value;
     }
 
-    private void recordEvent(Quest.Objective objective, String target) {
+    /**
+     * One short clause naming who contributed most, for the goal-completion prompt.
+     * Empty when nobody is attributable, so goals finished before this shipped, or by
+     * players who have since logged off, simply read as they did before.
+     */
+    String contributionLine(ServerGoal goal) {
+        List<java.util.Map.Entry<UUID, Integer>> board = goal.leaderboard();
+        if (board.isEmpty()) return "";
+        java.util.Map.Entry<UUID, Integer> top = board.get(0);
+        String name = playerName(top.getKey());
+        if (name == null) return "";
+        if (board.size() > 1 && board.get(1).getValue().equals(top.getValue())) {
+            return " %s and %s tied for the most contributed (%d %s each); mention that in one short clause."
+                    .formatted(name, playerName(board.get(1).getKey()) == null ? "another player"
+                            : playerName(board.get(1).getKey()), top.getValue(),
+                            QuestManager.prettyTarget(goal.target()));
+        }
+        return " %s contributed the most (%d of %d %s); mention that in one short clause, no extra ceremony."
+                .formatted(name, top.getValue(), goal.amount(), QuestManager.prettyTarget(goal.target()));
+    }
+
+    private String playerName(UUID playerId) {
+        ServerPlayer player = server.getPlayerList().getPlayer(playerId);
+        return player == null ? null : player.getName().getString();
+    }
+
+    private void recordEvent(UUID playerId, Quest.Objective objective, String target) {
         ServerGoal goal = state.activeGoal;
-        if (goal != null && goal.recordEvent(objective, target)) {
+        if (goal != null && goal.recordEvent(playerId, objective, target)) {
             announceMilestone(goal);
             store.save(state);
         }

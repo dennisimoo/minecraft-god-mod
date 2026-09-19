@@ -1,6 +1,9 @@
 package dev.aigod;
 
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -21,8 +24,9 @@ final class ServerGoal {
     private final String punishmentCommand;
     private final boolean trial;
     private int eventProgress;
-    private final Map<UUID, Integer> baselines = new HashMap<>();
-    private final Map<UUID, Integer> latest = new HashMap<>();
+    private Map<UUID, Integer> baselines = new HashMap<>();
+    private Map<UUID, Integer> latest = new HashMap<>();
+    private Map<UUID, Integer> eventCredits = new HashMap<>();
 
     ServerGoal(String challenge, Quest.Objective objective, String target, int amount,
                long day, long deadlineDayTime, String rewardCommand, String punishmentCommand,
@@ -38,10 +42,22 @@ final class ServerGoal {
         this.trial = trial;
     }
 
+    /**
+     * Restores any map that a save file predating it left null. Gson allocates the goal
+     * without running field initializers, so a goal already in flight when the server
+     * updates would otherwise carry nulls into the first kill of the day.
+     */
+    void normalize() {
+        if (baselines == null) baselines = new HashMap<>();
+        if (latest == null) latest = new HashMap<>();
+        if (eventCredits == null) eventCredits = new HashMap<>();
+    }
+
     /** KILL and MINE contributions from any player. Returns true when progress moved. */
-    boolean recordEvent(Quest.Objective event, String eventTarget) {
+    boolean recordEvent(UUID playerId, Quest.Objective event, String eventTarget) {
         if (objective != event || !target.equals(eventTarget) || complete()) return false;
         eventProgress++;
+        if (playerId != null) eventCredits.merge(playerId, 1, Integer::sum);
         return true;
     }
 
@@ -52,6 +68,33 @@ final class ServerGoal {
         int before = progress();
         latest.put(playerId, currentCount);
         return progress() != before;
+    }
+
+    /**
+     * How much each player contributed to the current progress, whatever the objective
+     * type. KILL and MINE credit the player who caused the event; COLLECT and STAT use
+     * each player's gain over their own baseline.
+     */
+    Map<UUID, Integer> contributions() {
+        Map<UUID, Integer> result = new HashMap<>();
+        if (objective == Quest.Objective.KILL || objective == Quest.Objective.MINE) {
+            result.putAll(eventCredits);
+            return result;
+        }
+        for (Map.Entry<UUID, Integer> entry : latest.entrySet()) {
+            int gained = Math.max(0, entry.getValue() - baselines.getOrDefault(entry.getKey(), 0));
+            if (gained > 0) result.put(entry.getKey(), gained);
+        }
+        return result;
+    }
+
+    /** Contributors ordered by how much they added, largest first. Ties break on UUID so the order is stable. */
+    List<Map.Entry<UUID, Integer>> leaderboard() {
+        List<Map.Entry<UUID, Integer>> entries = new ArrayList<>(contributions().entrySet());
+        entries.sort(Comparator
+                .comparingInt(Map.Entry<UUID, Integer>::getValue).reversed()
+                .thenComparing(entry -> entry.getKey().toString()));
+        return entries;
     }
 
     int progress() {

@@ -78,12 +78,12 @@ final class GodService implements AutoCloseable {
 
     void recordKill(ServerPlayer player, String entityId, String victimName) {
         quests.recordKill(player, entityId, victimName);
-        daily.recordKill(entityId);
+        daily.recordKill(player.getUUID(), entityId);
     }
 
     void recordMine(ServerPlayer player, String blockId) {
         quests.recordMine(player, blockId);
-        daily.recordMine(blockId);
+        daily.recordMine(player.getUUID(), blockId);
     }
 
     void requestDailyGoal(ServerPlayer speaker, long deadlineDayTime, long day, boolean trial,
@@ -153,8 +153,9 @@ final class GodService implements AutoCloseable {
         ChatTurn turn = new ChatTurn(speaker.getUUID(), ("""
                 The server COMPLETED today's goal: "%s" (%d %s). The stored reward already ran for
                 every online player. Celebrate briefly in your voice; a little spectacle (particles,
-                a triumphant sound) is welcome. Do not repeat the reward.%s
-                """).formatted(goal.challenge(), goal.amount(), goal.target(), milestone));
+                a triumphant sound) is welcome. Do not repeat the reward.%s%s
+                """).formatted(goal.challenge(), goal.amount(), goal.target(), milestone,
+                        daily.contributionLine(goal)));
         turn.systemEvent = true;
         queue.addLast(turn);
         processNext();
